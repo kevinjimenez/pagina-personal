@@ -32,7 +32,7 @@ export const Descripcion = () => {
         <div className="col-sm-3" />
         <div className="col-sm-6">
           <div className="d-grid gap-2">
-          <Link to="/files/Currículum-Kevin-Jimenez.pdf" target="_blank" download>Download</Link>
+          <Link to="/files/Currículum-Kevin-Jimenez.pdf" className="btn btn-outline-success" target="_blank" download>Download</Link>
             <button
               className="btn btn-outline-success"
               type="button"
