@@ -1,0 +1,50 @@
+import manticoreIcon from "../../assets/icons/manticore-labs.png";
+import coop29OctIcon from "../../assets/icons/29Octubre.png";
+
+export const CARGOS = [
+  {
+    id: 1,
+    cargo: "Full Stack developer",
+    empresa: "Manticore-Labs",
+    funciones: [],
+    icon: "pi pi-shopping-cart",
+    inicio: "Agosto 2017",
+    fin: "Octubre 2020",
+    presente: false,
+    status: "Manticore-Labs",
+    date: "Full Stack developer | Agosto 2017 - Octubre 2020",
+    color: "#227093",
+    image: manticoreIcon,
+    descripcion: [
+      "Metodologías ágiles SCRUM.",
+      "Análisis de requerimientos.",
+      "Maquetado de aplicaciones web y móviles.",
+      "Aplicaciones móviles híbridas y nativas.",
+      "Desarrollo frontend.",
+      "Desarrollo backend, webservice, rest api.",
+      "TDD desarrollo guiado a pruebas",
+    ],
+  },
+  {
+    id: 2,
+    cargo: "Analista de gestión de aplicaciones",
+    empresa: "Cooperativa 29 de Octubre",
+    funciones: [],
+    icon: "pi pi-shopping-cart",
+    inicio: "Octubre 2020",
+    fin: "Presente",
+    presente: true,
+    status: "Cooperativa 29 de Octubre",
+    date: "Analista de gestión de aplicaciones | Octubre 2020 - Presente",
+    color: "#b33939",
+    image: coop29OctIcon,
+    descripcion: [
+      "Tech Lead.",
+      "Análisis de requerimientos.",
+      "Integración y consumo de webservices hacia al bus transaccional",
+      "Versionamiento e integración continua.",
+      "Desarrollo frontend.",
+      "Desarrollo backend, webservice, rest api.",
+    ],
+  },
+];
