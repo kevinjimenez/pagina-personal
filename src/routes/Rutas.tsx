@@ -12,11 +12,11 @@ export const Rutas = () => {
     <BrowserRouter>
       <Layout>
         <Switch>
-          <Route exact path="/" component={SobreMi} />
-          <Route exact path="/experiencia" component={Experiencia} />
-          <Route exact path="/proyectos" component={Proyectos} />
-          <Route exact path="/habilidades" component={Habilidades} />
-          <Route exact path="/educacion" component={Educacion} />
+          <Route exact path="/pagina-personal" component={SobreMi} />
+          <Route exact path="/pagina-personal/experiencia" component={Experiencia} />
+          <Route exact path="/pagina-personal/proyectos" component={Proyectos} />
+          <Route exact path="/pagina-personal/habilidades" component={Habilidades} />
+          <Route exact path="/pagina-personal/educacion" component={Educacion} />
           <Route component={NotFound} />
         </Switch>
       </Layout>
