@@ -9,14 +9,14 @@ import { SobreMi } from "../pages/SobreMi";
 
 export const Rutas = () => {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={process.env.PUBLIC_URL}>
       <Layout>
         <Switch>
-          <Route exact path={process.env.PUBLIC_URL + '/'} component={SobreMi} />
-          <Route exact path={process.env.PUBLIC_URL + '/experiencia'} component={Experiencia} />
-          <Route exact path={process.env.PUBLIC_URL + '/proyectos'} component={Proyectos} />
-          <Route exact path={process.env.PUBLIC_URL + '/habilidades'} component={Habilidades} />
-          <Route exact path={process.env.PUBLIC_URL + '/educacion'} component={Educacion} />
+          <Route exact path='/' component={SobreMi} />
+          <Route exact path='/experiencia' component={Experiencia} />
+          <Route exact path='/proyectos' component={Proyectos} />
+          <Route exact path='/habilidades' component={Habilidades} />
+          <Route exact path='/educacion' component={Educacion} />
           <Route component={NotFound} />
         </Switch>
       </Layout>
