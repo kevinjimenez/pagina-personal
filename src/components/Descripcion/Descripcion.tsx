@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 
 export const Descripcion = () => {
   const handlerClick = () => {
+
     saveAs("/files/Currículum-Kevin-Jimenez.pdf", "CV_Kevin-Jimenez.pdf");
   };
 
@@ -28,10 +29,7 @@ export const Descripcion = () => {
       <div className="row">
         <div className="col-sm-3" />
         <div className="col-sm-6">
-          <div className="d-grid gap-2">
-            <Link to="/files/Currículum.pdf" target="_blank" download>
-              Download
-            </Link>
+          <div className="d-grid gap-2">            
             <button
               className="btn btn-outline-success"
               type="button"
