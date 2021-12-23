@@ -1,15 +1,7 @@
-import { saveAs } from "file-saver";
 import { P } from "./styles";
 import { Link } from "react-router-dom";
 
 export const Descripcion = () => {
-  const handlerClick = () => {
-    saveAs(
-      process.env.REACT_APP_CLIENT_URL + "/files/Currículum-Kevin-Jimenez.pdf",
-      "CV_Kevin-Jimenez.pdf"
-    );
-  };
-
   return (
     <>
       <div className="row">
@@ -32,14 +24,14 @@ export const Descripcion = () => {
         <div className="col-sm-3" />
         <div className="col-sm-6">
           <div className="d-grid gap-2">
-          <Link to="/files/Currículum-Kevin-Jimenez.pdf" className="btn btn-outline-success" target="_blank" download>Download</Link>
-            <button
+            <Link
+              to="/files/Currículum-Kevin-Jimenez.pdf"
               className="btn btn-outline-success"
-              type="button"
-              onClick={handlerClick}
+              target="_blank"
+              download
             >
-              Descargar CV
-            </button>
+              Download CV
+            </Link>
           </div>
         </div>
         <div className="col-sm-3" />
