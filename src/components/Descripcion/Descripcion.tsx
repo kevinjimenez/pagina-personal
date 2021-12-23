@@ -4,8 +4,10 @@ import { Link } from "react-router-dom";
 
 export const Descripcion = () => {
   const handlerClick = () => {
-
-    saveAs("/files/Currículum-Kevin-Jimenez.pdf", "CV_Kevin-Jimenez.pdf");
+    saveAs(
+      process.env.REACT_APP_CLIENT_URL + "/files/Currículum-Kevin-Jimenez.pdf",
+      "CV_Kevin-Jimenez.pdf"
+    );
   };
 
   return (
@@ -29,7 +31,7 @@ export const Descripcion = () => {
       <div className="row">
         <div className="col-sm-3" />
         <div className="col-sm-6">
-          <div className="d-grid gap-2">            
+          <div className="d-grid gap-2">
             <button
               className="btn btn-outline-success"
               type="button"
